@@ -14,7 +14,7 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 name = "cloudflare-docker-proxy"
  routes = [
    { pattern = "docker.libaitian.xyz", custom_domain = true },
-   { pattern = "quay.libaitian.xyzo", custom_domain = true },
+   { pattern = "quay.libaitian.xyz", custom_domain = true },
    { pattern = "gcr.libaitian.xyz", custom_domain = true },
    { pattern = "k8s-gcr.libaitian.xyz", custom_domain = true },
    { pattern = "k8s.libaitian.xyz", custom_domain = true },
