@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.libaitian.xyz", custom_domain = true },
-#   { pattern = "quay.libaitian.xyzo", custom_domain = true },
-#   { pattern = "gcr.libaitian.xyz", custom_domain = true },
-#   { pattern = "k8s-gcr.libaitian.xyz", custom_domain = true },
-#   { pattern = "k8s.libaitian.xyz", custom_domain = true },
-#   { pattern = "ghcr.libaitian.xyz", custom_domain = true },
-#   { pattern = "cloudsmith.libaitian.xyz", custom_domain = true },
-# ]
+ routes = [
+   { pattern = "docker.libaitian.xyz", custom_domain = true },
+   { pattern = "quay.libaitian.xyzo", custom_domain = true },
+   { pattern = "gcr.libaitian.xyz", custom_domain = true },
+   { pattern = "k8s-gcr.libaitian.xyz", custom_domain = true },
+   { pattern = "k8s.libaitian.xyz", custom_domain = true },
+   { pattern = "ghcr.libaitian.xyz", custom_domain = true },
+   { pattern = "cloudsmith.libaitian.xyz", custom_domain = true },
+ ]
 
 [env.production.vars]
 MODE = "production"
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libaitian.xyz", custom_domain = true }
+route = { pattern = "docker-staging.libaitian.xyz", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
